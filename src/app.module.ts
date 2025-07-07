@@ -20,6 +20,7 @@ import { PermissionsModule } from './modules/permissions/permissions.module';
 import { RolesModule } from './modules/roles/roles.module';
 import { CommonServicesModule } from './common/services/common-services.module';
 import { HealthModule } from './modules/health/health.module';
+import { AiModule } from './modules/ai/ai.module';
 
 @Module({
   imports: [
@@ -44,6 +45,7 @@ import { HealthModule } from './modules/health/health.module';
     RolesModule,
     PermissionsModule,
     HealthModule,
+    AiModule,
   ],
   controllers: [],
   providers: [

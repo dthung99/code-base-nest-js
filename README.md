@@ -38,5 +38,7 @@ yarn run start:dev
 
 ```bash
 docker build -t nestjs-app .
+sudo docker network create --ipv6 --subnet=fd00::/64 ipv6-enabled # For those connecting to db with IPV6 only. you also need to enable   "ipv6": true in your docker daemon
+
 docker run --network=ipv6-enabled -p 3000:3000 --env-file .env --name my-nestjs-app nestjs-app
 ```
